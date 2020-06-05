@@ -12,12 +12,14 @@ class Cell{
 }
 
 var canvas = document.getElementById("canvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 var ctx = canvas.getContext("2d");
 
 canvas.addEventListener('click', on_canvas_click, false);
 
-var width = 40;
-var height = 25;
+var width = 31;
+var height = 35;
 
 var Hz = 60;
 
